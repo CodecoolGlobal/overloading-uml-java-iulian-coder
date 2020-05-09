@@ -49,11 +49,15 @@ public class Webshop {
         warehouse.addProductList(product2);
 
         //Show all products in the Warehouse
-//        System.out.println(warehouse.getProductList());
-//        System.out.println(warehouse.getAllProductsBy(supplier1));
-//        System.out.println(warehouse.getAllProductsBy(productCategory1));
+        System.out.println(warehouse.getProductList());
+        System.out.println(warehouse.getAllProductsBy(supplier1));
+        System.out.println(warehouse.getAllProductsBy(productCategory1));
 
-        //Create Feature product
+       // Create Feature product
+        ProductCategory drillMachine = new FeaturedProductCategory();
+        ((FeaturedProductCategory) drillMachine).schedule(new Date(2019,10,10), new Date(2020,02,02));
+        System.out.println(drillMachine);
+
 
 
 
